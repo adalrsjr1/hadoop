@@ -1,0 +1,24 @@
+2016-01-06 16:00:04,882 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-01-06 16:00:05,162 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-01-06 16:00:05,162 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2016-01-06 16:00:05,179 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2016-01-06 16:00:05,179 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1452106634412_0002, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@4802796d)
+2016-01-06 16:00:05,335 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2016-01-06 16:00:05,933 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-hduser/nm-local-dir/usercache/hduser/appcache/application_1452106634412_0002
+2016-01-06 16:00:06,695 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2016-01-06 16:00:07,464 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2016-01-06 16:00:07,737 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://hadoop-1.local:9000/user/hduser/QuasiMonteCarlo_1452106775241_608830480/in/part7:0+118
+2016-01-06 16:00:07,774 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2016-01-06 16:00:07,774 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2016-01-06 16:00:07,774 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2016-01-06 16:00:07,774 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2016-01-06 16:00:07,774 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2016-01-06 16:00:07,778 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2016-01-06 16:00:07,820 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2016-01-06 16:00:07,820 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2016-01-06 16:00:07,820 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+2016-01-06 16:00:07,820 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+2016-01-06 16:00:07,831 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2016-01-06 16:00:07,838 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1452106634412_0002_m_000013_0 is done. And is in the process of committing
+2016-01-06 16:00:07,885 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Error reading the stream java.io.IOException: No such process
+2016-01-06 16:00:07,949 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1452106634412_0002_m_000013_0' done.
