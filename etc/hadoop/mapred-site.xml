@@ -25,4 +25,69 @@
 		<name>mapreduce.job.tracker</name>
 		<value>hadoop-1:5431</value>
 	</property>
+
+	<!-- resources config -->
+	<property>
+        <name>mapreduce.map.cpu.vcores</name>
+        <value>1</value>
+        <description>The number of virtual cores required for each map task.</description>
+    </property>
+    <property>
+        <name>mapreduce.reduce.cpu.vcores</name>
+        <value>1</value>
+        <description>The number of virtual cores required for each map task.</description>
+    </property>
+	
+	<property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+		<value>512</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.command-opts</name>
+        <value>-Xmx384m</value>
+    </property>
+	<property>
+	    <name>mapreduce.map.memory.mb</name>
+		<value>512</value>
+	    <description>Larger resource limit for maps.</description>
+	</property>
+	<property>
+	    <name>mapreduce.map.java.opts</name>
+	    <value>-Xmx384m</value>
+	    <description>Heap-size for child jvms of maps.</description>
+	</property>
+	<property>
+	    <name>mapreduce.reduce.memory.mb</name>
+	    <value>512</value>
+	    <description>Larger resource limit for reduces.</description>
+	</property>
+	<property>
+	     <name>mapreduce.reduce.java.opts</name>
+	     <value>-Xmx384m</value>
+	     <description>Heap-size for child jvms of reduces.</description>
+	 </property>
+	 <property>
+		 <name>yarn.app.mapreduce.am.resource.mb</name>
+		 <value>512</value>
+	 </property>
+	 <property>
+		 <name>yarn.app.mapreduce.am.command-opts</name>
+		 <value>-Xmx384m</value>
+	 </property>
+	 <property>
+		 <name>yarn.app.mapreduce.am.resource.cpu-vcores</name>
+		 <value>1</value>
+	 </property>
+	 <property>
+		 <name>yarn.nodemanager.vmem-check-enabled</name>
+		 <value>false</value>
+	 </property>
+	 <property>
+		 <name>yarn.nodemanager.pmem-check-enabled</name>
+		 <value>true</value>
+	 </property>
+	 <property>
+		 <name>yarn.nodemanager.vmem-pmem-ratio</name>
+		 <value>2.1</value>
+	 </property>
 </configuration>
